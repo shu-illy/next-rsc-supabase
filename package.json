@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "i": "bun install -y"
   },
   "dependencies": {
     "@types/node": "22.5.0",
