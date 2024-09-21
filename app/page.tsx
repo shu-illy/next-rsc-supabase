@@ -1,4 +1,5 @@
 import { NotesList } from './components/NotesList'
+import { TimeCounter } from './components/TimeCounter'
 
 export default function Page() {
   return (
@@ -6,6 +7,7 @@ export default function Page() {
       <div className="m-10 text-center">
         <p>Hello World</p>
         <NotesList />
+        <TimeCounter />
       </div>
     </main>
   )
