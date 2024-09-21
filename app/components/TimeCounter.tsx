@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 export const TimeCounter = () => {
   const [count, setCount] = useState<number>(0)
   useEffect(() => {
-    const timer = setInterval(() => setCount((prevCount) => prevCount + 1), 500)
+    const timer = setInterval(() => setCount((prevCount) => prevCount + 1), 100)
     return () => clearInterval(timer)
   }, [])
   return (
