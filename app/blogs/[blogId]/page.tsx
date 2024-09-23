@@ -22,9 +22,9 @@ const fetchBlog = async (blogId: string) => {
       }),
     }
   )
-  if (!res.ok) {
-    throw new Error('Failed to fetch data in server')
-  }
+  // if (!res.ok) {
+  //   throw new Error('Failed to fetch data in server')
+  // }
   const blogs: Blog[] = await res.json()
   return blogs[0]
 }
