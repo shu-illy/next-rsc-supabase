@@ -54,4 +54,12 @@ const BlogPage = async ({ params }: PageProps) => {
   )
 }
 
+export const generateStaticParams = async () => {
+  const res = await fetch(`${process.env.url}/rest/v1/blogs?select=*`, {
+    headers: new Headers({ apikey: process.env.apikey as string }),
+  })
+  const blogs: Blog[] = await res.json()
+  return blogs.map((blog) => ({ blogId: blog.id }))
+}
+
 export default BlogPage
