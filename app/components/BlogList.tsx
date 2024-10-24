@@ -1,5 +1,5 @@
 import React from 'react'
-import { Database } from '../../database.types'
+import type { Database } from '../../database.types'
 import Link from 'next/link'
 
 type Blog = Database['public']['Tables']['blogs']['Row']

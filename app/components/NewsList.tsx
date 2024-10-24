@@ -1,4 +1,4 @@
-import { Database } from '@/database.types'
+import type { Database } from '@/database.types'
 import React from 'react'
 import { Counter } from './Counter'
 

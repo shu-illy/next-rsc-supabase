@@ -11,6 +11,7 @@ export const TimeCounter = () => {
     <div>
       <p>{count}</p>
       <button
+        type="button"
         className="font-sm my-3 rounded bg-indigo-600 py-1 px-3 text-white hover:bg-indigo-700"
         onClick={() => setCount(0)}
       >
