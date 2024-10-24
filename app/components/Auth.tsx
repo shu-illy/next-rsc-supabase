@@ -1,12 +1,12 @@
 'use client'
 
 import useStore from '@/store'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/navigation'
 import React, { type FormEvent, useState } from 'react'
 import supabase from '@/utils/superbase'
 import { ArrowRightOnRectangleIcon } from '@heroicons/react/24/solid'
 
-const Auth = () => {
+export const Auth = () => {
   const { loginUser } = useStore()
   const [isLogin, setIsLogin] = useState(true)
   const [email, setEmail] = useState('')
@@ -89,5 +89,3 @@ const Auth = () => {
     </div>
   )
 }
-
-export default Auth
