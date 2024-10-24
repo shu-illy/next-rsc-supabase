@@ -1,0 +1,5 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "biome.requireConfigFile": false,
+  "editor.formatOnSave": true
+}
