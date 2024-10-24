@@ -27,5 +27,5 @@ export const SupabaseListener = ({ accessToken }: { accessToken?: string }) => {
     })
   }, [accessToken, router, updateLoginUser])
 
-  return <div>SupabaseListener</div>
+  return null
 }
